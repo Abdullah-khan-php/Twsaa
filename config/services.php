@@ -34,12 +34,17 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
-'facebook' => [
-    'app_id' => env('FACEBOOK_APP_ID'),
-    'app_secret' => env('FACEBOOK_APP_SECRET'),
-    'access_token' => env('FACEBOOK_ACCESS_TOKEN'),
-    'ad_account_id' => env('FACEBOOK_AD_ACCOUNT_ID'),
-],
+    'facebook' => [
+        'app_id' => env('FACEBOOK_APP_ID'),
+        'app_secret' => env('FACEBOOK_APP_SECRET'),
+        'access_token' => env('FACEBOOK_ACCESS_TOKEN'),
+        'ad_account_id' => env('FACEBOOK_AD_ACCOUNT_ID'),
+    ],
+    'snapchat' => [
+        'client_id' => env('SNAPCHAT_CLIENT_ID'),
+        'client_secret' => env('SNAPCHAT_CLIENT_SECRET'),
+        'redirect' => env('SNAPCHAT_REDIRECT_URI'),
+    ],
 
 
 ];

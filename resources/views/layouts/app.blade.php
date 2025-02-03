@@ -13,8 +13,8 @@
         <!-- <link href="{{ asset("assets/css/all.min.css") }}" rel="stylesheet"> -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-        <link href="{{ asset("assets/css/bootstrap.min.css") }}" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="{{ asset("assets/js/bootstrap.bundle.min.js") }}" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="{{ asset("assets/css/bootstrap.min.css") }}" rel="stylesheet" >
+        <script src="{{ asset("assets/js/bootstrap.bundle.min.js") }}"></script>
 
 
         <!-- Scripts -->
