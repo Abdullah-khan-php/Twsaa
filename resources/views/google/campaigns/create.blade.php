@@ -9,23 +9,23 @@
         <div class="w-full mx-auto px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
                 <h3 class="text-lg font-semibold mb-4">Create a New Campaign</h3>
-@if ($errors->any())
-    <div class="mb-4 p-4 bg-red-100 border border-red-500 text-red-700 rounded-lg shadow-md">
-        <div class="flex items-center">
-            <svg class="w-6 h-6 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M18.364 5.636L5.636 18.364M5.636 5.636l12.728 12.728"></path>
-            </svg>
-            <strong class="text-lg" style="color:red">Whoops! Something went wrong.</strong>
-        </div>
-        <ul class="mt-2 ml-6 list-disc text-sm font-medium">
-            @foreach ($errors->all() as $error)
-                <li class="text-red-800" style="color:red">{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
+                @if ($errors->any())
+                <div class="mb-4 p-4 bg-red-100 border border-red-500 text-red-700 rounded-lg shadow-md">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M18.364 5.636L5.636 18.364M5.636 5.636l12.728 12.728"></path>
+                        </svg>
+                        <strong class="text-lg" style="color:red">Whoops! Something went wrong.</strong>
+                    </div>
+                    <ul class="mt-2 ml-6 list-disc text-sm font-medium">
+                        @foreach ($errors->all() as $error)
+                        <li class="text-red-800" style="color:red">{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
 
 
                 <form action="{{ route('facebook-campaigns.store') }}" method="POST">

@@ -14,7 +14,8 @@
         "laravel/framework": "^11.31",
         "laravel/socialite": "^5.17",
         "laravel/tinker": "^2.9",
-        "socialiteproviders/snapchat": "^4.1"
+        "socialiteproviders/snapchat": "^4.1",
+        "socialiteproviders/zoho": "^4.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

@@ -16,9 +16,9 @@ class ComposerStaticInit626b9e7ddd47fb7eff9aaa53cce0c9ad
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
@@ -97,6 +97,7 @@ class ComposerStaticInit626b9e7ddd47fb7eff9aaa53cce0c9ad
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Clock\\' => 24,
+            'SocialiteProviders\\Zoho\\' => 24,
             'SocialiteProviders\\Snapchat\\' => 28,
             'SocialiteProviders\\Manager\\' => 27,
         ),
@@ -355,6 +356,10 @@ class ComposerStaticInit626b9e7ddd47fb7eff9aaa53cce0c9ad
         'Symfony\\Component\\Clock\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/clock',
+        ),
+        'SocialiteProviders\\Zoho\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/socialiteproviders/zoho',
         ),
         'SocialiteProviders\\Snapchat\\' => 
         array (
@@ -648,6 +653,7 @@ class ComposerStaticInit626b9e7ddd47fb7eff9aaa53cce0c9ad
         'App\\Http\\Controllers\\GoogleCampaignController' => __DIR__ . '/../..' . '/app/Http/Controllers/GoogleCampaignController.php',
         'App\\Http\\Controllers\\InstagramCampaignController' => __DIR__ . '/../..' . '/app/Http/Controllers/InstagramCampaignController.php',
         'App\\Http\\Controllers\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfileController.php',
+        'App\\Http\\Controllers\\SnapchatCampaignController' => __DIR__ . '/../..' . '/app/Http/Controllers/SnapchatCampaignController.php',
         'App\\Http\\Controllers\\TiktokCampaignController' => __DIR__ . '/../..' . '/app/Http/Controllers/TiktokCampaignController.php',
         'App\\Http\\Controllers\\XCampaignController' => __DIR__ . '/../..' . '/app/Http/Controllers/XCampaignController.php',
         'App\\Http\\Controllers\\YoutubeCampaignController' => __DIR__ . '/../..' . '/app/Http/Controllers/YoutubeCampaignController.php',
@@ -669,6 +675,9 @@ class ComposerStaticInit626b9e7ddd47fb7eff9aaa53cce0c9ad
         'App\\Models\\FacebookCampaign' => __DIR__ . '/../..' . '/app/Models/FacebookCampaign.php',
         'App\\Models\\GoogleCampaign' => __DIR__ . '/../..' . '/app/Models/GoogleCampaign.php',
         'App\\Models\\InstagramCampaign' => __DIR__ . '/../..' . '/app/Models/InstagramCampaign.php',
+        'App\\Models\\Snapchat' => __DIR__ . '/../..' . '/app/Models/Snapchat.php',
+        'App\\Models\\SnapchatAdAccount' => __DIR__ . '/../..' . '/app/Models/SnapchatAdAccount.php',
+        'App\\Models\\SnapchatCampaign' => __DIR__ . '/../..' . '/app/Models/SnapchatCampaign.php',
         'App\\Models\\TiktokCampaign' => __DIR__ . '/../..' . '/app/Models/TiktokCampaign.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\XCampaign' => __DIR__ . '/../..' . '/app/Models/XCampaign.php',
@@ -6528,6 +6537,8 @@ class ComposerStaticInit626b9e7ddd47fb7eff9aaa53cce0c9ad
         'SocialiteProviders\\Manager\\SocialiteWasCalled' => __DIR__ . '/..' . '/socialiteproviders/manager/src/SocialiteWasCalled.php',
         'SocialiteProviders\\Snapchat\\Provider' => __DIR__ . '/..' . '/socialiteproviders/snapchat/Provider.php',
         'SocialiteProviders\\Snapchat\\SnapchatExtendSocialite' => __DIR__ . '/..' . '/socialiteproviders/snapchat/SnapchatExtendSocialite.php',
+        'SocialiteProviders\\Zoho\\Provider' => __DIR__ . '/..' . '/socialiteproviders/zoho/Provider.php',
+        'SocialiteProviders\\Zoho\\ZohoExtendSocialite' => __DIR__ . '/..' . '/socialiteproviders/zoho/ZohoExtendSocialite.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Clock\\Clock' => __DIR__ . '/..' . '/symfony/clock/Clock.php',
         'Symfony\\Component\\Clock\\ClockAwareTrait' => __DIR__ . '/..' . '/symfony/clock/ClockAwareTrait.php',

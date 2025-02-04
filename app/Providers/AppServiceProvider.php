@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use SocialiteProviders\Manager\SocialiteWasCalled;
+use SocialiteProviders\Snapchat\SnapchatExtendSocialite;
+use Illuminate\Support\Facades\Event;
+
 use Illuminate\Support\ServiceProvider;
 use App\Interfaces\FacebookCampaignRepositoryInterface;
 use App\Repositories\FacebookCampaignRepository;
@@ -36,6 +40,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        //parent::boot();
+        Event::listen(SocialiteWasCalled::class, SnapchatExtendSocialite::class);
     }
 }

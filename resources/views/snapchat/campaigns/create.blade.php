@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Create Facebook Campaign') }}
+            {{ __('Create Snapchat Campaign') }}
         </h2>
     </x-slot>
 
@@ -63,14 +63,22 @@
                         <!-- Start Date -->
                         <div class="col-sm-6">
                             <div class="mb-4">
-                                <select name="ad_account_id" required>
+                                <!-- <select name="ad_account_id" required>
                                     @foreach($accounts as $account)
                                         <option value="{{ $account->id }}">{{ $account->account_name }}</option>
                                     @endforeach
-                                </select>
+                                </select> -->
                             </div>
                         </div>
                     </div>
+                    <!-- Submit Button -->
+                    <div class="mt-6 flex justify-end">
+                            <button type="submit"
+                                class="btn btn-primary px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+                                Save Campaign
+                            </button>
+                        </div>
+
                 </form>
             </div>
         </div>

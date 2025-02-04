@@ -57,6 +57,12 @@
                         <i class="fab fa-x"></i> 
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('snapchat-campaigns.index')"
+                        :active="request()->routeIs('snapchat-campaigns.index') || request()->routeIs('snapchat-campaigns.create')">
+                        <i class="fab fa-snapchat"></i> 
+                    </x-nav-link>
+                </div>
 
             </div>
 
