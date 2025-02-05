@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Create Facebook Campaign') }}
+            {{ __('Create Titktok Campaign') }}
         </h2>
     </x-slot>
 
@@ -28,7 +28,7 @@
 @endif
 
 
-                <form action="{{ route('facebook-campaigns.store') }}" method="POST">
+                <form action="{{ route('tiktok-campaigns.store') }}" method="POST">
                     @csrf
                     <div class="row">
                         <div class="col-sm-6">

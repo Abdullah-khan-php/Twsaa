@@ -27,7 +27,7 @@ class TiktokCampaignController extends Controller
      */
     public function create()
     {
-        //
+        return view("tiktok.campaigns.create");
     }
 
     /**

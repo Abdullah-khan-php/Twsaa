@@ -19,11 +19,12 @@
                 </div>
                 <div class="overflow-x-auto">
                     <table
-                        class="w-full max-w-full border border-gray-300 divide-y divide-gray-200 shadow-md rounded-lg">
+                        class="w-full max-w-full border border-gray-300 divide-y divide-gray-200 shadow-md rounded-lg DataTables">
                         <thead class="bg-gray-100">
                             <tr>
                                 <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700 uppercase">ID</th>
                                 <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700 uppercase">Name</th>
+                                <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700 uppercase">Objective</th>
                                 <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700 uppercase">Status
                                 </th>
                                  <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700 uppercase">Action
@@ -35,6 +36,7 @@
                                 <tr class="hover:bg-gray-50">
                                     <td class="px-6 py-4 text-sm text-gray-900">{{ $_eachCampaign->id }}</td>
                                     <td class="px-6 py-4 text-sm font-medium text-gray-800">{{ $_eachCampaign->name }}</td>
+                                    <td class="px-6 py-4 text-sm font-medium text-gray-800">{{ $_eachCampaign->objective }}</td>
                                     <td class="px-6 py-4 text-sm">
                                         @if($_eachCampaign->status === 'active')
                                             <span
@@ -52,7 +54,7 @@
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="3" class="px-6 py-4 text-center text-gray-500">No campaigns found.</td>
+                                    <td colspan="5" class="px-6 py-4 text-center text-gray-500">No campaigns found.</td>
                                 </tr>
                             @endforelse
                         </tbody>
